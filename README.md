@@ -39,7 +39,7 @@ docker build -t codepoint-front .
 ```
 **Run the container**
 ```
-docker run -dp 3000:3000 codepoint-front
+docker-compose --env-file .env.local up
 ```
 
 ## License

@@ -21,6 +21,7 @@ export default function Home({
   return (
     <div className={styles.container}>
       <Head>
+        <link rel="manifest" href="/manifest.json" />
         <title>CodepointTKU Projects</title>
         <meta
           name="description"
@@ -74,7 +75,6 @@ export async function getServerSideProps({locale}: any) {
       }
     `,
   })
-
   return {
     props: {
       org: data.organization,

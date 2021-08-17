@@ -6,7 +6,6 @@ module.exports = withPWA({
   pwa:{
     dest: 'public',
     runtimeCaching,
-
   },
   images: {domains: ['avatars.githubusercontent.com']},
   reactStrictMode: true,
